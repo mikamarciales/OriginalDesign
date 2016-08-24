@@ -29,6 +29,9 @@ void draw()
 void body()
 {
 	noStroke();
+	fill(0);
+	arc(300, 450, 375, 500, -PI, 0);
+	noStroke();
 	//shoulders and below
 	fill(255, 153, 204);
 	rect(175, 375, 250, 325, 100);
@@ -58,6 +61,11 @@ void hair()
 	strokeWeight(10);
 	line(255, 235, 230, 237);
 	line(365, 237, 340, 235);
+	//head hair
+	noStroke();
+	fill(255, 0, 127);
+	arc(300, 225, 260, 230, -PI, 0);
+
 }
 
 void bblgum()
