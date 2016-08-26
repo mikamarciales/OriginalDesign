@@ -1,7 +1,5 @@
 int bbgx = 0;
 int bbgy = 0;
-//float eyex = 5.0;
-//float eyey = 5.0;
 
 void setup()
 {
@@ -17,8 +15,6 @@ void draw()
 	bblgum();
 	bbgx = bbgx + 1;
 	bbgy = bbgy + 1;
-	//eyex = eyex + 0.5;
-	//eyey = eyey + 0.5;
 	if (mousePressed)
 	{
 		bbgx = 0;
@@ -28,21 +24,25 @@ void draw()
 
 void body()
 {
+	//hair
 	noStroke();
 	fill(0);
-	arc(300, 450, 375, 500, -PI, 0);
-	noStroke();
+	arc(300, 425, 315, 625, -PI, 0);
 	//shoulders and below
-	fill(255, 153, 204);
+	fill(255, 190, 229);
 	rect(175, 375, 250, 325, 100);
 	//head
 	fill(230, 198, 165);
 	ellipse(300, 275, 260, 260);
+	//hair cont
+	fill(0);
+	arc(300, 245, 255, 230, -PI, 0);
 }
 
 void face()
 {
 	//eyes
+	noStroke();
 	fill(0);
 	ellipse(245, 270, 25, 25);
 	ellipse(350, 270, 25, 25);
@@ -59,12 +59,14 @@ void hair()
 	//eyebrows
 	fill(0);
 	strokeWeight(10);
-	line(255, 235, 230, 237);
-	line(365, 237, 340, 235);
-	//head hair
+	line(255, 237, 230, 239);
+	line(365, 239, 340, 237);
+	//hat
 	noStroke();
-	fill(255, 0, 127);
-	arc(300, 225, 260, 230, -PI, 0);
+	fill(255, 102, 178);
+	arc(300, 225, 250, 230, -PI, 0);
+	fill(255, 153, 204);
+	arc(300, 225, 250, 125, -PI, 0);
 
 }
 
